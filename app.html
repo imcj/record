@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LungoJS 1.2</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icon@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+    <link rel="apple-touch-startup-image" href="assets/images/default.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./lungo.js/lungo-1.2.css">
+    <link rel="stylesheet" href="./lungo.js/lungo.theme.default.css">
+</head>
+
+<body class="app">
+    <section id="record">
+        <header data-title="Record">
+
+            <a href="#copyright" data-target="section" data-icon="files" class="button onright">捐赠</a>
+        </header>
+        <article id="data-attributes" class="list scrollable">
+            <div class="indented">
+                <h1 class="title">The data-attributes</h1>
+                <ul>
+                    <li data-icon="user">
+                        data-icon
+                        <small>Creates an icon LungoJS vectorized</small>
+                    </li>
+                    <li data-image="assets/images/avatars/1.jpg">
+                        data-image
+                        <small>Instance a &lt;img&gt; automatically</small>
+                    </li>
+                    <li>
+                        data-search
+                        <small>Creates a search input form</small>
+                    </li>
+                    <li data-search="Type your search..."></li>
+
+                    <li>
+                        data-progress
+                        <small>Creates a progress element</small>
+                    </li>
+                    <li data-progress="25%"></li>
+                </ul>
+
+                <h1 class="title">Others</h1>
+                <ul>
+                    <li>
+                        data-title
+                        <small>Relationship field between &lt;header&gt; and &lt;a&gt;</small>
+                    </li>
+                    <li>
+                        <div class="onright" data-count="23 units"></div>
+                        data-count
+                        <small>Creates counters of different &lt;elements&gt;</small>
+                    </li>
+                    <li>
+                        data-back
+                        <small>Creates a button that goes to the previous section.</small>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <footer class="toolbar with-labels">
+            <nav>
+                <a href="#article-1" class="current" data-target="article" data-icon="user" data-label="User"></a>
+                <a href="#article-2" data-target="article" data-icon="group" data-label="Group"></a>
+                <a href="#article-3" data-target="article" data-icon="folder" data-label="Folder"></a>
+            </nav>
+        </footer>
+
+
+    </section>
+
+    <section id="copyright">
+        <header data-back="home" data-title="Copyright"></header>
+        ddd
+        <article></article>
+    </section>
+
+    <!-- LungoJS (Production mode) -->
+    <script src="lungo.js/lungo-1.2.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script src="app/app.js"></script>
+    <script src="app/data.js"></script>
+    <script src="app/events.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/view.js"></script>
+</body>
+</html>

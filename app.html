@@ -21,20 +21,34 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="lungo.js/lungo-1.2.css">
     <link rel="stylesheet" href="lungo.js/lungo.theme.default.css">
+    <link rel="stylesheet" href="assets/stylesheets/app.css">
 </head>
 
 <body class="app">
     <section id="record">
         <header data-title="Record">
-            <a href="#donate" data-target="section" data-icon="files" class="button onright">捐赠</a>
+            <!-- <a href="#donate" data-target="section" data-icon="files" class="button onright">捐赠</a> -->
         </header>
-        <article id="data-attributes" class="list scrollable">
-            <div class="indented">
+        <article id="today" class="list">
+<!--             <div class="indented">
                 <ul>
                     <li><input type="text" placeholder="键入你要记录的内容 ..." /></li>
                 </ul>
             </div>
+            <div id="list-today" class="indented list">
+            </div> -->
         </article>
+        <article id="calendar" class="">
+        </article>
+        <article id="home" class="">
+        </article>
+        <footer class="toolbar with-labels">
+            <nav>
+                <a href="#today" data-target="article" class="current" data-icon="clock" />
+                <a href="#calendar" data-target="article" data-icon="calendar" />
+                <a href="#home" data-target="article" data-icon="home" />
+            </nav>
+        </footer>
     </section>
 
     <section id="donate">
